@@ -29,34 +29,38 @@ public class quadraticFormula{
 		System.out.print("C = ");
 		double c = input.nextDouble();
 
-		// compute discriminant
+		// print equation in standard form
+		System.out.println("Evaluating Y[x] = "+a+"x^2 + "+b+"x +"+c);
+
+		// compute and print discriminant
 		double discriminant;
 		discriminant = (b*b) - 4*(a)*(c);
+		System.out.println("Discriminant = " + discriminant);
 		
-		//compute vertex
+		// compute and print vertex
 		double x = -(b/(2*a));
-		double y = a*(x*x) + b*(x) + c;
-		double [] vertex = new double [] {x,y};
+		double h = x;
+		double k = a*(x*x) + b*(x) + c;
+		double [] vertex = new double [] {h,k};
+		System.out.println("A.o.S : x = "+x);
+		System.out.println("Vertex = ("+h+" , "+k+")");
 
-		//compute roots
-		double r1 = 0.0;
-		double r2 = 0.0;
-		if (discriminant >=0){
-			r1 = (-b - Math.sqrt(discriminant))/(2*a);
-			r2 = (-b + Math.sqrt(discriminant))/(2*a);
+		// compute and print roots
+		if (discriminant > 0){
+			double r1 = (-b - Math.sqrt(discriminant))/(2*a);
+			double r2 = (-b + Math.sqrt(discriminant))/(2*a);
+			System.out.println("Roots = {("+r1+" , 0) & ("+r2+" , 0)}");
+		}else if (discriminant == 0){
+			System.out.println("Root = vertex = ("+h+" , "+k+")");
 		}else{
 			System.out.println("NO REAL ROOTS");
 		}
-
-		// print data
-		System.out.println("Evaluating Y[x] = "+a+"x^2 + "+b+"x + "+c);
-		System.out.println("Discriminant = " + discriminant);
-		System.out.println("Vertex = ("+x+","+y+")");
-		System.out.println("Roots = ("+r1+",0) & ("+r2+",0)");
-		System.out.println("YInt = (0,"+c+")");
+		
+		// print y-intercept
+		System.out.println("Y-intercept = (0 , "+c+")");
 
 	
-		
+		// print done
 		System.out.println("\n\nDONE");
 
 
