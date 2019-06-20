@@ -3,7 +3,7 @@ import java.util.Scanner;
 // import the math class to compute square roots
 import java.lang.Math;
 
-public class quadraticFormula{
+public class vertexForm{
 	public static void main(String[] args) {
 		
 		// print description of the program
@@ -60,18 +60,34 @@ public class quadraticFormula{
 		System.out.println("Y-intercept = (0 , "+c+")");
 
 		// print vertex form
-		System.out.println("Vertex Form: Y[x] = "+a+"* (x-"+h+")^2  + "k");
+		System.out.println("Vertex Form: Y[x] = "+a+"* (x-"+h+")^2  + "+k);
 
 		// compute and print focus
 		double fx = h;
 		double fy = k + (1/(4*a));
-		System.out.println("Focus: ("+fx+" , "+fy+");
+		System.out.println("Focus: ("+fx+" , "+fy+")");
 
 		// compute and print directrix
 		// a bit tricky
 		double delta = fy - k;
 		double directrix = k - delta;
+		// dir = k + (1/(4*a));
 		System.out.println("Directrix: y = "+directrix);
+
+		// print Domain
+		System.out.println("Domain: {x = R}");
+
+		// compute and print Range
+		String sign;
+		if (a<0){
+			sign = " <= ";
+		}
+		else{
+			sign = " >= ";
+		}
+		System.out.println("Range: {Y" + sign + k+"}");
+
+
 
 	
 		// print done
