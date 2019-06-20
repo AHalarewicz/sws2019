@@ -1,4 +1,4 @@
-HW 02
+HW 01
 
 Further develop your Java Program that evaluates quadratic
 trinomial equations to perform the following requirements:
