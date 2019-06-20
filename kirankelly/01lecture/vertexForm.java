@@ -83,9 +83,8 @@ public class vertexForm{
 		System.out.println("Focus: ("+fx+" , "+fy+")");
 
 		// compute and print directrix
-		// a bit tricky
-		double delta = fy - k;
-		double directrix = k - delta;
+		// a bit tricky but simple
+		double directrix = k - (1/(4*a));
 		// dir = k + (1/(4*a));
 		System.out.println("Directrix: y = "+directrix);
 
