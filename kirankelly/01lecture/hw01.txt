@@ -1,9 +1,9 @@
-HW 02
+HW 01
 
 Further develop your Java Program that evaluates quadratic
 trinomial equations to perform the following requirements:
 
-1. Print and updated description for the user.
+1. Print and updated the description for the user.
 2. Compute and print the equation in equivalent vertex form.
 3. Print the Domain.
 4. Compute and print the Range.
