@@ -7,8 +7,9 @@ public class vertexForm{
 	public static void main(String[] args) {
 		
 		// print description of the program
-		String description = "This program provides the vertex and intercepts of a quadratic trinomial equation in standard form.\n";
-		System.out.println(description);
+		String description1 = "This program evaluates a quadratic trinomial equation in standard form\n";
+		String description2 = "and displays all of the relevant information to the user.\n";
+		System.out.println(description1 + description2);
 
 		// Explain expectations for input
 		String instructions = "The quadratic trinomial equation in standard form should resemble\nY[x] = A*x^2 + B*x + C\n\nPlease provide A, B, and C when prompted.";
@@ -60,20 +61,8 @@ public class vertexForm{
 		System.out.println("Y-intercept = (0 , "+c+")");
 
 		// print vertex form
-		System.out.println("Vertex Form: Y[x] = "+a+"* (x-"+h+")^2  + "+k);
-
-		// compute and print focus
-		double fx = h;
-		double fy = k + (1/(4*a));
-		System.out.println("Focus: ("+fx+" , "+fy+")");
-
-		// compute and print directrix
-		// a bit tricky
-		double delta = fy - k;
-		double directrix = k - delta;
-		// dir = k + (1/(4*a));
-		System.out.println("Directrix: y = "+directrix);
-
+		System.out.println("Vertex Form: Y[x] = "+a+"* (x - "+h+")^2  + "+k);
+		
 		// print Domain
 		System.out.println("Domain: {x = R}");
 
@@ -88,6 +77,17 @@ public class vertexForm{
 		System.out.println("Range: {Y" + sign + k+"}");
 
 
+		// compute and print focus
+		double fx = h;
+		double fy = k + (1/(4*a));
+		System.out.println("Focus: ("+fx+" , "+fy+")");
+
+		// compute and print directrix
+		// a bit tricky
+		double delta = fy - k;
+		double directrix = k - delta;
+		// dir = k + (1/(4*a));
+		System.out.println("Directrix: y = "+directrix);
 
 	
 		// print done

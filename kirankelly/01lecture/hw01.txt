@@ -1,0 +1,71 @@
+HW 02
+
+Further develop your Java Program that evaluates quadratic
+trinomial equations to perform the following requirements:
+
+1. Print and updated description for the user.
+2. Compute and print the equation in equivalent vertex form.
+3. Print the Domain.
+4. Compute and print the Range.
+5. Compute and print the Focus of the parabola.
+6. Compute and print the Directrix of the parabola.
+
+
+
+Your program's input/output should now resemble the following:
+
+/////////////////////////////////////////////////
+
+This program evaluates a quadratic trinomial equation in standard form
+and displays all of the relevant information to the user.
+
+The quadratic trinomial equation in standard form should resemble
+Y[x] = A*x^2 + B*x + C
+
+Please provide A, B, and C when prompted.
+A = 1
+B = 5
+C = 6
+Evaluating Y[x] = 1.0x^2 + 5.0x +6.0
+Discriminant = 1.0
+A.o.S : x = -2.5
+Vertex = (-2.5 , -0.25)
+Roots = {(-3.0 , 0) & (-2.0 , 0)}
+Y-intercept = (0 , 6.0)
+Vertex Form: Y[x] = 1.0* (x - -2.5)^2  + -0.25
+Domain: {x = R}
+Range: {Y >= -0.25}
+Focus: (-2.5 , 0.0)
+Directrix: y = -0.5
+
+
+DONE
+
+/////////////////////////////////////////////////
+
+This program evaluates a quadratic trinomial equation in standard form
+and displays all of the relevant information to the user.
+
+The quadratic trinomial equation in standard form should resemble
+Y[x] = A*x^2 + B*x + C
+
+Please provide A, B, and C when prompted.
+A = -1
+B = -5
+C = 6
+Evaluating Y[x] = -1.0x^2 + -5.0x +6.0
+Discriminant = 49.0
+A.o.S : x = -2.5
+Vertex = (-2.5 , 12.25)
+Roots = {(1.0 , 0) & (-6.0 , 0)}
+Y-intercept = (0 , 6.0)
+Vertex Form: Y[x] = -1.0* (x - -2.5)^2  + 12.25
+Domain: {x = R}
+Range: {Y <= 12.25}
+Focus: (-2.5 , 12.0)
+Directrix: y = 12.5
+
+
+DONE
+
+/////////////////////////////////////////////////
