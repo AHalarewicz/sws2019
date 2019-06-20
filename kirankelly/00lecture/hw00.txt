@@ -1,3 +1,5 @@
+HW 00
+
 Write a Java program that evaluates a quadratic trinomial equation provided by the user.
 The program will:
 1. Print a brief description of the program.
