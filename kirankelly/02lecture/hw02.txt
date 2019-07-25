@@ -1,25 +1,64 @@
-HW 02
+ HW 02
 
-Write a program that solves a 2 variable system of equations
-when given the coefficients of both equations.
+DESCRIPTION:
+ There are two main ways to solve a system of equations: 
+ SUBSTITION and ROW REDUCTION (elimination).
+ We will focus on Row Reduction to create a general algorithm
+ that acheives Reduced Row Echelon form (rref on a  calculator).
+
+OBJECTIVE:
+ Write a program that solves 2 variable systems of equations
+ when given the coefficients of both equations.
 
 Remember: When operating on a system of equations, 
  you are allowed to multiply by a coefficient 
- OR add  and subtract two equations
+ OR add and subtract two equations.
 
-A typical problem will begin in the form:
+EXAMPLE:
+ A typical problem will begin in the form:
+  2x - 3y = 18
+ -5x - 2y = -7
 
-a1*X + b1*Y = c1
-a2*X + b2*Y = c2
+REQUIREMENTS:
+1. Prompt the user for the coefficients from each equation.
+2. Determine which constansts, when multiplied to an 
+   equation, will result in matching x-coefficients.
+3. Subtract the equations to cancel the x-term 
+   and isolate a y-coeff.
+4. Solve for y from the new equation.
+5. Use y to solve for x.
+6. Print the results for x and y.
 
-Prompt the user for the coefficients from each equation.
-Multiply each equation by constants until the 
- leading coefficients equal eachother.
-Subtract the equations to cancel the x-coeffs 
- and isolate a y-coeff.
-Solve for y from the new equation.
-Use y to solve for x.
-Print the results for x and y.
+BONUS:
+ Explore the functions on a graphing calculator that 
+ solve more complex systems of equations through
+ matrix manipulation.
+
+PRACTICE:
+ (1) 1x - 7y = -11
+     5x + 2y = -18
+
+ (2) 7x - 8y = -16
+    -4x + 2y =  4
+
+ (3) 3x +  9y =  15
+    -4x - 12y = -20
+
+ (4)  6x - 5y = 4
+    -12x + 2y = 8
+
+ (5) -2x + 10y = -16 
+      5x - 25y =  40
+
+ (6) 2x + 3y = 20
+     7x + 2y = 53 
 
 
-
+SOLUTIONS: [x,y]
+ (ex) [3,-4]
+ (1)  [-4,1]
+ (2)  [0,2]
+ (3)  [2,1]
+ (4)  [-1,-2]
+ (5)  [-7,-3]
+ (6)  [7,2]
