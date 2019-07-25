@@ -1,0 +1,25 @@
+HW 02
+
+Write a program that solves a 2 variable system of equations
+when given the coefficients of both equations.
+
+Remember: When operating on a system of equations, 
+ you are allowed to multiply by a coefficient 
+ OR add  and subtract two equations
+
+A typical problem will begin in the form:
+
+a1*X + b1*Y = c1
+a2*X + b2*Y = c2
+
+Prompt the user for the coefficients from each equation.
+Multiply each equation by constants until the 
+ leading coefficients equal eachother.
+Subtract the equations to cancel the x-coeffs 
+ and isolate a y-coeff.
+Solve for y from the new equation.
+Use y to solve for x.
+Print the results for x and y.
+
+
+
