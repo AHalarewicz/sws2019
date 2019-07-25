@@ -30,8 +30,8 @@ public class systems2{
 		for (int i = 0; i < eq1.length; i++){
 			num1 = eq1[i];
 			num2 = eq2[i];
-			num1 = num1 * x1 * x2;
-			num2 = num2 * x1 * x1;
+			num1 = num1 * x2;
+			num2 = num2 * x1;
 			eq1[i] = num1;
 			eq2[i] = num2;
 		}
