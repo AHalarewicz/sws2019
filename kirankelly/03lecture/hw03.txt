@@ -1,0 +1,49 @@
+ HW03
+
+OBJECTIVE:
+ Solve a 3 variable system of equations by reducing rows to 
+ isolate the variables.
+
+HINT:
+ Operate on the system's coefficients by scaling the constants
+ and adding rows together until you have two unique equations
+ with only two variables. From there, you can you can solve the 
+ 2-var system and use the results to solve for the third and final variable.
+
+EXAMPLE: 
+   2x - 3y + 2z =  20 //EQ1
+  -5x - 2y + 9z =  2  //EQ2
+   1x + 4y + 3z = -10 //EQ3
+
+ Apply row reduction techniques to obtain a 2-var/2-EQ system:
+  -10x + 15y - 10z = -100
+    0x + 19y - 28z = -104 
+    0x + 55y + 20z = -200
+   (HINT: notice -10 is an L.C.M. & EQ2 and EQ3 only has 2 vars.
+
+ Cancel the y-term in EQ3 to obtain Reduced Row Echelon Form:
+  -10x +   15y -   10z = -100
+    0x + 1045y - 1540z = -5720
+    0x +    0y - 1920z = -1920
+
+
+REQUIREMENTS:
+1. Declare 12 double variables to hold the initial values for 
+   each coeeficient in the system. (ex: int x3, y3, z3, s3;)
+2. Prompt the user for each coefficient and store the provided
+   values respectively within the 12 decalred variables.
+3. Declare and initialize three double arrays using the 
+   coeficients form each equation. (ex: int eq3 = {x3,y3,z3,s3};)
+4. Using a FOR LOOP, scale each equation to create equal 
+   x-coefficients within all equations.
+5. Create two unique equations with only y and z by subtracting 
+   equations in order to eliminate the x-term.
+6. Solve the new 2 variable sub-system two obtain the numeric 
+   values for y and z
+7. Plug the 2 known variables into an equation and solve for z,
+   the third and final variable. 
+8. Print the results for x, y, and z.
+
+
+SOLUTIONS:
+ (ex) [3,-4,1]
